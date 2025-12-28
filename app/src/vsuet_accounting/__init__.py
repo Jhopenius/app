@@ -1,1 +1,0 @@
-"""VSUET Accounting application package."""

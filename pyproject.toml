@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vsuet-accounting"
+version = "0.1.0"
+description = "VSUET accounting system (Streamlit + PostgreSQL)."
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = [
+    "pandas>=2.2.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.2.1",
+    "python-dotenv>=1.0.1",
+    "sqlalchemy>=2.0.27",
+    "psycopg2-binary>=2.9.9",
+    "streamlit>=1.31.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
